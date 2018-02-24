@@ -149,7 +149,7 @@ local function main()
     Funktion.status()
     print("Starte Download")
     id = event.timer(0.1, Funktion.status, math.huge)
-    if wget("-f", Funktion.Pfad(true), "/github-liste.txt") and wget("-f", "https://raw.githubusercontent.com/Nex4rius/Nex4rius-Programme/master/OpenOS-Updater/json.lua", "/json.lua") then
+    if wget("-f", Funktion.Pfad(true), "/github-liste.txt") and wget("-f", "https://raw.githubusercontent.com/AndrewShorty/OC_Updater/master/json.lua", "/json.lua") then
         if Funktion.verarbeiten() then
             return
         end
