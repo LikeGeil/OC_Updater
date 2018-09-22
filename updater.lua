@@ -1,6 +1,6 @@
 --[[
 loadfile("/bin/wget.lua")("-f", "https://raw.githubusercontent.com/Nex4rius/Nex4rius-Programme/master/GitHub-Downloader/github.lua", "/bin/github.lua")
-loadfile("/bin/github.lua")("MightyPirates", "OpenComputers", "master-MC1.7.10", "src/main/resources/assets/opencomputers/loot/openos/", "41acf2fa06990dcc4d740490cccd9d2bcec97edd")
+loadfile("/bin/github.lua")("MightyPirates", "OpenComputers", "master-MC1.10", "src/main/resources/assets/opencomputers/loot/openos/", "41acf2fa06990dcc4d740490cccd9d2bcec97edd")
 --]]
 
 local shell = require("shell")
@@ -33,7 +33,7 @@ function Funktion.Pfad(api)
     if api then
         return "https://api.github.com/repos/MightyPirates/OpenComputers/git/trees/89f1752e0c29a7152a12bf36f7707c25dc51da35?recursive=1"
     else
-        return "https://raw.githubusercontent.com/MightyPirates/OpenComputers/master-MC1.7.10/src/main/resources/assets/opencomputers/loot/openos/"
+        return "https://raw.githubusercontent.com/MightyPirates/OpenComputers/master-MC1.10/src/main/resources/assets/opencomputers/loot/openos/"
     end
 end
 
